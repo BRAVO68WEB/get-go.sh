@@ -30,10 +30,37 @@ brew install jq                                    # MacOS
 
 ## Usage
 
-### Basic Installation
+### Direct
 
 Install the latest stable Go version:
 
+```bash
+sudo ./get-go.sh
+```
+OR
+```bash
+curl -fsSL https://raw.githubusercontent.com/BRAVO68WEB/get-go.sh/refs/heads/master/get-go.sh | sudo bash 
+```
+OR
+```bash
+wget -qO- https://raw.githubusercontent.com/BRAVO68WEB/get-go.sh/refs/heads/master/get-go.sh | sudo bash
+```
+
+### Download & Run
+
+If you prefer to download first and then execute:
+
+1. Download the script
+```bash
+curl -fsSL -o get-go.sh https://raw.githubusercontent.com/BRAVO68WEB/get-go.sh/refs/heads/master/get-go.sh
+```
+
+2. Add execute permissions
+```bash
+chmod +x get-go.sh
+```
+
+3. Execute the script
 ```bash
 sudo ./get-go.sh
 ```
@@ -56,20 +83,27 @@ Options:
 ```bash
 sudo ./get-go.sh -v 1.21.3
 ```
+OR
+```bash
+curl -fsSL https://raw.githubusercontent.com/BRAVO68WEB/get-go.sh/refs/heads/master/get-go.sh | sudo bash -s -- -v 1.21.3
+```
 
 **Install using China CDN:**
 ```bash
 sudo ./get-go.sh -cn
+```
+OR
+```bash
+curl -fsSL https://raw.githubusercontent.com/BRAVO68WEB/get-go.sh/refs/heads/master/get-go.sh | sudo bash -s -- -cn
 ```
 
 **Force reinstall with specific version:**
 ```bash
 sudo ./get-go.sh -v 1.20.5 -f
 ```
-
-**Install latest version using China CDN:**
+OR
 ```bash
-sudo ./get-go.sh -cn
+curl -fsSL https://raw.githubusercontent.com/BRAVO68WEB/get-go.sh/refs/heads/master/get-go.sh | sudo bash -s -- -v 1.20.5 -f
 ```
 
 ## What the Script Does
