@@ -173,7 +173,7 @@ fi
 
 # Extract the downloaded tarball
 echo "Extracting Go..."
-sudo tar -cn /usr/local -xzf "$(basename "$GO_TAR_URL")"
+sudo tar -C /usr/local -xzf "$(basename "$GO_TAR_URL")"
 
 # Clean up
 cd ..
